@@ -8,6 +8,10 @@ var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
 
+// Load foundation
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
+
 // when path is "about", renders about, if its just the index of the page, then renders weather
 ReactDOM.render(
     <Router history={hashHistory}>
