@@ -26751,15 +26751,39 @@
 /* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'h3',
+	    "div",
 	    null,
-	    'About Component'
+	    React.createElement(
+	      "h1",
+	      { className: "text-center" },
+	      "About"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Part of The Complete React Web App Developer Course on ",
+	      React.createElement(
+	        "a",
+	        { href: "https://www.udemy.com/" },
+	        "Udemy"
+	      )
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Powered by ",
+	      React.createElement(
+	        "a",
+	        { href: "https://www.openweathermap.org" },
+	        "OpenWeatherMap"
+	      )
+	    )
 	  );
 	};
 
