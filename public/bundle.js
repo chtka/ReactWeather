@@ -25093,6 +25093,11 @@
 	    return React.createElement(
 	      'div',
 	      null,
+	      React.createElement(
+	        'h1',
+	        { className: 'text-center' },
+	        'Get Weather'
+	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      renderMessage()
 	    );
@@ -25136,7 +25141,7 @@
 	        null,
 	        React.createElement(
 	          "button",
-	          null,
+	          { className: "button expanded hollow" },
 	          "Get Weather"
 	        )
 	      )
@@ -25150,7 +25155,7 @@
 /* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -25161,13 +25166,17 @@
 	  // var {temp, location} = props;
 
 	  return React.createElement(
-	    'div',
+	    "div",
 	    null,
-	    'It is ',
-	    temp,
-	    ' in ',
-	    location,
-	    '.'
+	    React.createElement(
+	      "h3",
+	      { className: "text-center" },
+	      "It is ",
+	      temp,
+	      " in ",
+	      location,
+	      "."
+	    )
 	  );
 	};
 
